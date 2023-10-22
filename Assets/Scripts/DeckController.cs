@@ -33,10 +33,12 @@ public class DeckController : MonoBehaviour
 
     // put here because I don't have a more general script
     void Awake () {
-        #if UNITY_EDITOR
-        QualitySettings.vSyncCount = 0;  // VSync must be disabled
-        Application.targetFrameRate = 60;
-        #endif
+        QualitySettings.vSyncCount = 0; // Set vSyncCount to 0 so that using .targetFrameRate is enabled.
+        Application.targetFrameRate = 999;
+        // #if UNITY_EDITOR
+        // QualitySettings.vSyncCount = 0;  // VSync must be disabled
+        // Application.targetFrameRate = 60;
+        // #endif
     }
 
     // Start is called before the first frame update

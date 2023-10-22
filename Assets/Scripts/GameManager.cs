@@ -55,8 +55,8 @@ public class GameManager : MonoBehaviour
                 }
 
                 var endComparison = direction == -1
-                    ? transform.position.x > 17
-                    : transform.position.x < -17;
+                    ? transform.position.x > 20
+                    : transform.position.x < -20;
                 if (endComparison) {
                     EndRestart();
                 }
